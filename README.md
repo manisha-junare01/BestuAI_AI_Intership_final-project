@@ -71,4 +71,4 @@ BestuAI is not just an AI assistant –
 ---
 
 ## 👩‍💻 Author  
-Developed by **Manisha Junare** as a  part of **AI and Decentralization Project (2025)**.  
+Developed by **Manisha Junare** as a  part of **AI and Decentralization Internship  Project (2025)**.  
