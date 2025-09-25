@@ -57,8 +57,14 @@ BestuAI is not just an AI assistant –
 
 ---
 
-## 📷 Screenshots / Mockups  
-(Add here: Chat UI, Mood Detection, Study Planner)  
+## 🎥 Demo Video
+
+Watch the demo video on YouTube 👉 [Click Here](https://youtu.be/vBfD1vPFSy8)
+
+Or click the thumbnail below 👇  
+
+[![Watch the Demo](https://img.youtube.com/vi/vBfD1vPFSy8/0.jpg)](https://youtu.be/vBfD1vPFSy8)
+ 
 
 ---
 
