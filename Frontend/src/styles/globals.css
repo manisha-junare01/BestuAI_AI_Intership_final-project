@@ -1,0 +1,486 @@
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --background: linear-gradient(135deg, #fef7ff 0%, #fff1f8 25%, #fef3c7 50%, #ecfdf5 75%, #f0f9ff 100%);
+  --foreground: #1f2937;
+  --card: rgba(255, 255, 255, 0.9);
+  --card-foreground: #1f2937;
+  --popover: rgba(255, 255, 255, 0.95);
+  --popover-foreground: #1f2937;
+  --primary: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  --primary-foreground: #ffffff;
+  --secondary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --secondary-foreground: #ffffff;
+  --muted: rgba(249, 250, 251, 0.8);
+  --muted-foreground: #6b7280;
+  --accent: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  --accent-foreground: #ffffff;
+  --destructive: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  --destructive-foreground: #ffffff;
+  --border: rgba(219, 234, 254, 0.5);
+  --input: rgba(255, 255, 255, 0.8);
+  --input-background: rgba(249, 250, 251, 0.6);
+  --switch-background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #8b5cf6;
+  --chart-1: #fbbf24;
+  --chart-2: #34d399;
+  --chart-3: #60a5fa;
+  --chart-4: #f472b6;
+  --chart-5: #a78bfa;
+  --radius: 1rem;
+  --sidebar: rgba(255, 255, 255, 0.9);
+  --sidebar-foreground: #1f2937;
+  --sidebar-primary: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(249, 250, 251, 0.8);
+  --sidebar-accent-foreground: #1f2937;
+  --sidebar-border: rgba(219, 234, 254, 0.3);
+  --sidebar-ring: #8b5cf6;
+  
+  /* Mood-based colors */
+  --mood-happy: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+  --mood-happy-bg: rgba(254, 243, 199, 0.8);
+  --mood-happy-border: rgba(251, 191, 36, 0.3);
+  
+  --mood-sad: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+  --mood-sad-bg: rgba(219, 234, 254, 0.8);
+  --mood-sad-border: rgba(96, 165, 250, 0.3);
+  
+  --mood-stressed: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+  --mood-stressed-bg: rgba(220, 252, 231, 0.8);
+  --mood-stressed-border: rgba(52, 211, 153, 0.3);
+  
+  --mood-excited: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #db2777 100%);
+  --mood-excited-bg: rgba(252, 231, 243, 0.8);
+  --mood-excited-border: rgba(244, 114, 182, 0.3);
+  
+  --mood-neutral: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #7c3aed 100%);
+  --mood-neutral-bg: rgba(237, 233, 254, 0.8);
+  --mood-neutral-border: rgba(167, 139, 250, 0.3);
+}
+
+.dark {
+  --background: linear-gradient(135deg, #0f0f23 0%, #1e1b4b 25%, #312e81 50%, #1e3a8a 75%, #1e293b 100%);
+  --foreground: #f8fafc;
+  --card: rgba(30, 41, 59, 0.9);
+  --card-foreground: #f8fafc;
+  --popover: rgba(30, 41, 59, 0.95);
+  --popover-foreground: #f8fafc;
+  --primary: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);
+  --primary-foreground: #ffffff;
+  --secondary: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --secondary-foreground: #ffffff;
+  --muted: rgba(51, 65, 85, 0.8);
+  --muted-foreground: #94a3b8;
+  --accent: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  --accent-foreground: #ffffff;
+  --destructive: linear-gradient(135deg, #f87171 0%, #ef4444 100%);
+  --destructive-foreground: #ffffff;
+  --border: rgba(71, 85, 105, 0.5);
+  --input: rgba(51, 65, 85, 0.8);
+  --input-background: rgba(30, 41, 59, 0.6);
+  --switch-background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+  --ring: #a78bfa;
+  --chart-1: #fbbf24;
+  --chart-2: #34d399;
+  --chart-3: #60a5fa;
+  --chart-4: #f472b6;
+  --chart-5: #a78bfa;
+  --sidebar: rgba(30, 41, 59, 0.9);
+  --sidebar-foreground: #f8fafc;
+  --sidebar-primary: linear-gradient(135deg, #a78bfa 0%, #f472b6 100%);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: rgba(51, 65, 85, 0.8);
+  --sidebar-accent-foreground: #f8fafc;
+  --sidebar-border: rgba(71, 85, 105, 0.3);
+  --sidebar-ring: #a78bfa;
+  
+  /* Dark mode mood colors */
+  --mood-happy: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+  --mood-happy-bg: rgba(69, 26, 3, 0.8);
+  --mood-happy-border: rgba(251, 191, 36, 0.3);
+  
+  --mood-sad: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #2563eb 100%);
+  --mood-sad-bg: rgba(23, 37, 84, 0.8);
+  --mood-sad-border: rgba(96, 165, 250, 0.3);
+  
+  --mood-stressed: linear-gradient(135deg, #34d399 0%, #10b981 50%, #059669 100%);
+  --mood-stressed-bg: rgba(2, 44, 34, 0.8);
+  --mood-stressed-border: rgba(52, 211, 153, 0.3);
+  
+  --mood-excited: linear-gradient(135deg, #f472b6 0%, #ec4899 50%, #db2777 100%);
+  --mood-excited-bg: rgba(76, 5, 25, 0.8);
+  --mood-excited-border: rgba(244, 114, 182, 0.3);
+  
+  --mood-neutral: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 50%, #7c3aed 100%);
+  --mood-neutral-bg: rgba(46, 16, 101, 0.8);
+  --mood-neutral-border: rgba(167, 139, 250, 0.3);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-switch-background: var(--switch-background);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  body {
+    @apply text-foreground;
+    background: var(--background);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+/* Cheerful animations and transitions */
+@keyframes bounce-in {
+  0% { transform: scale(0.3) rotate(-5deg); opacity: 0; }
+  50% { transform: scale(1.05) rotate(2deg); }
+  70% { transform: scale(0.9) rotate(-1deg); }
+  100% { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+
+@keyframes confetti-fall {
+  0% { 
+    transform: translateY(-100vh) rotate(0deg);
+    opacity: 1;
+  }
+  100% { 
+    transform: translateY(100vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse-gentle {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+.animate-bounce-in {
+  animation: bounce-in 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.animate-confetti {
+  animation: confetti-fall 3s linear infinite;
+}
+
+.animate-pulse-gentle {
+  animation: pulse-gentle 2s ease-in-out infinite;
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient-shift 3s ease infinite;
+}
+
+/* Mood-based utility classes */
+.mood-happy {
+  background: var(--mood-happy);
+  border-color: var(--mood-happy-border);
+}
+
+.mood-happy-bg {
+  background: var(--mood-happy-bg);
+  border-color: var(--mood-happy-border);
+}
+
+.mood-sad {
+  background: var(--mood-sad);
+  border-color: var(--mood-sad-border);
+}
+
+.mood-sad-bg {
+  background: var(--mood-sad-bg);
+  border-color: var(--mood-sad-border);
+}
+
+.mood-stressed {
+  background: var(--mood-stressed);
+  border-color: var(--mood-stressed-border);
+}
+
+.mood-stressed-bg {
+  background: var(--mood-stressed-bg);
+  border-color: var(--mood-stressed-border);
+}
+
+.mood-excited {
+  background: var(--mood-excited);
+  border-color: var(--mood-excited-border);
+}
+
+.mood-excited-bg {
+  background: var(--mood-excited-bg);
+  border-color: var(--mood-excited-border);
+}
+
+.mood-neutral {
+  background: var(--mood-neutral);
+  border-color: var(--mood-neutral-border);
+}
+
+.mood-neutral-bg {
+  background: var(--mood-neutral-bg);
+  border-color: var(--mood-neutral-border);
+}
+
+/* Enhanced button styles */
+.btn-cheerful {
+  background: linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%);
+  border: none;
+  border-radius: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-cheerful::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s;
+}
+
+.btn-cheerful:hover::before {
+  left: 100%;
+}
+
+.btn-cheerful:hover {
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+}
+
+.btn-cheerful:active {
+  transform: translateY(0px) scale(1);
+}
+
+/* Card enhancements */
+.card-cheerful {
+  backdrop-filter: blur(15px);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-cheerful::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+}
+
+.card-cheerful:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Notification styles */
+.notification-cheerful {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  border: 2px solid #fbbf24;
+  border-radius: 1rem;
+  color: white;
+  padding: 1rem;
+  box-shadow: 0 4px 20px rgba(251, 191, 36, 0.3);
+  animation: bounce-in 0.6s ease-out;
+}
+
+/* Toggle switch enhancements */
+.toggle-cheerful {
+  background: linear-gradient(135deg, #a78bfa 0%, #c084fc 100%);
+  border-radius: 2rem;
+  transition: all 0.3s ease;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggle-cheerful:checked {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  box-shadow: 0 0 20px rgba(52, 211, 153, 0.3);
+}
+
+/* Tab enhancements */
+.tab-cheerful {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.tab-cheerful::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, transparent 30%, rgba(255, 255, 255, 0.1) 50%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.tab-cheerful:hover::before {
+  opacity: 1;
+}
+
+/* Progress bar enhancements */
+.progress-cheerful {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #f97316 100%);
+  border-radius: 1rem;
+  box-shadow: 0 2px 10px rgba(251, 191, 36, 0.3);
+  animation: shimmer 2s infinite;
+}
+
+/* Input field enhancements */
+.input-cheerful {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(135deg, #8b5cf6, #ec4899) border-box;
+  border-radius: 0.75rem;
+  transition: all 0.3s ease;
+}
+
+.input-cheerful:focus {
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+  transform: scale(1.02);
+}
+
+/**
+ * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
+ */
+@layer base {
+  :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
+    h1 {
+      font-size: var(--text-2xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h2 {
+      font-size: var(--text-xl);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h3 {
+      font-size: var(--text-lg);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    h4 {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    p {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+
+    label {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    button {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-medium);
+      line-height: 1.5;
+    }
+
+    input {
+      font-size: var(--text-base);
+      font-weight: var(--font-weight-normal);
+      line-height: 1.5;
+    }
+  }
+}
+
+html {
+  font-size: var(--font-size);
+}
