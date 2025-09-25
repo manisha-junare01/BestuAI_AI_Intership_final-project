@@ -44,7 +44,7 @@ BestuAI is not just an AI assistant –
 ## 🛠️ Tech Stack (Prototype Version)  
 - **Frontend:** React.js / HTML, CSS, JavaScript  
 - **Backend:** Node.js with Express OR Python Flask  
-- **Database (Optional):** JSON / SQLite  
+- **Database (Optional):** Firebase Realtime Database (cloud-hosted NoSQL DB)  
 - **AI Logic:** Predefined mood-based responses & study data  
 
 ---
