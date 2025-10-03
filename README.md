@@ -57,16 +57,19 @@ BestuAI is not just an AI assistant –
 
 ---
 
-## 🎥 Demo Video
+## 🎥 Demo & Live Project
 
-Watch the demo video on YouTube 👉 [Click Here](https://youtu.be/vBfD1vPFSy8)
+Watch the demo video on YouTube 👉 [Click Here](https://youtu.be/vBfD1vPFSy8)  
 
 Or click the thumbnail below 👇  
 
 [![Watch the Demo](https://img.youtube.com/vi/vBfD1vPFSy8/0.jpg)](https://youtu.be/vBfD1vPFSy8)
 
-[Click here to watch on LinkedIn](https://www.linkedin.com/your-video-link)
- 
+💻 **Live Project (Vercel):** [Click Here](https://bestuai-git-main-manisha-junare01s-projects.vercel.app)  
+
+🔗 **LinkedIn Post:** [Click Here](https://www.linkedin.com/your-video-link)  
+
+💻 **GitHub Repository:** [Click Here](https://github.com/your-username/BestuAI)
 
 ---
 
